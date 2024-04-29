@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "popins", sans-serif;
 }
+
 body {
   background-color: black;
   color: white;
@@ -99,40 +100,38 @@ nav button {
   padding: 1rem 3rem;
 }
 
-
 /* <!-- --------------------------------------FEATURES SECTION------------------------------------- --> */
 
-.features{
-    padding: 2rem 10%;
-    font-size: 1.5rem;
+.features {
+  padding: 2rem 10%;
+  font-size: 1.5rem;
 }
 
-.features .row{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 3rem 0;
+.features .row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 3rem 0;
 }
-.img-col{
-    flex-basis: 50%;
-    margin-top: 1rem;
+.img-col {
+  flex-basis: 50%;
+  margin-top: 1rem;
 }
-.text-col{
-    flex-basis: 50%;
-    margin-top: 1rem;
+.text-col {
+  flex-basis: 50%;
+  margin-top: 1rem;
 }
-.img-col img{
-    width: 90%;
+.img-col img {
+  width: 90%;
 }
-.features h2{
-    font-size: 3rem;
-    font-weight: 600;
-    margin-bottom: 1.2rem;
+.features h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
 }
 
-
-/* <!-- --------------------------------------FEATURES SECTION------------------------------------- --> */
+/* <!-- --------------------------------------FAQ SECTION------------------------------------- --> */
 
 .faq {
   padding: 0.6rem 12%;
@@ -140,25 +139,25 @@ nav button {
   font-size: 1.1rem;
 }
 
-.faq h2{
+.faq h2 {
   font-weight: 500;
   font-size: 2rem;
 }
 /* <!-- --------------------------------------ACCORDIAN SECTION------------------------------------- --> */
 
-.accordian{
+.accordian {
   margin: 3.7rem;
   width: 100%;
   max-width: 40rem;
 }
 
-.accordian li{
+.accordian li {
   list-style: none;
   width: 100%;
   padding: 0.3rem;
 }
 
-.accordian li label{
+.accordian li label {
   display: flex;
   align-items: center;
   padding: 1.2rem;
@@ -169,17 +168,17 @@ nav button {
   cursor: pointer;
   position: relative;
 }
-label::after{
-  content: '+';
+label::after {
+  content: "+";
   font-size: 2.1rem;
   position: absolute;
   right: 1.2rem;
   transition: transform 0.5s;
 }
-input[type="radio"]{
+input[type="radio"] {
   display: none;
 }
-.accordian .content{
+.accordian .content {
   background: #303030;
   text-align: left;
   padding: 0 1.2rem;
@@ -188,63 +187,143 @@ input[type="radio"]{
   transition: max-height 0.5s, padding 0.5s;
 }
 
-.accordian input[type="radio"]:checked + label + .content{
-max-height: 37rem;
-padding: 1.8rem 1.2rem;
+.accordian input[type="radio"]:checked + label + .content {
+  max-height: 37rem;
+  padding: 1.8rem 1.2rem;
 }
-.accordian input[type="radio"]:checked + label::after{
+.accordian input[type="radio"]:checked + label::after {
   transform: rotate(225deg);
 }
 
-.faq .email-signup{
+.faq .email-signup {
   max-width: 36rem;
   margin: 1.2rem auto 3.7rem;
 }
 
-.faq small{
+.faq small {
   font-size: 0.9rem;
 }
 
-
 /* ---------------------FOOTER SECTION----------------------  */
 
-.footer{
+.footer {
   max-width: 100vw;
   padding: 5rem 15% 2rem;
   border-top: 0.4rem solid rgb(57, 56, 56);
   color: #777;
 }
-.footer h2{
+.footer h2 {
   font-size: 1.3rem;
   font-weight: 400;
   margin-bottom: 2.8rem;
 }
 
-.footer .col{
+.footer .col {
   flex-direction: row;
   flex-basis: 25%;
   flex-grow: 1;
   margin-bottom: 1.2rem;
 }
-.footer .col a{
+.footer .col a {
   display: block;
   text-decoration: none;
-  color:#777 ;
+  color: #777;
   font-size: 0.8rem;
   margin-bottom: 0.9rem;
 }
-.footer .row{
+.footer .row {
   display: flex;
   align-items: center;
 }
-.footer .lang-btn{
+.footer .lang-btn {
   color: white;
   padding: 0.6rem 1.2rem;
   border-radius: 0.3rem;
   cursor: pointer;
 }
-.copyright-txt{
+.copyright-txt {
   font-size: 0.8rem;
   margin-top: 1rem;
   margin-bottom: 1.2rem;
 }
+
+/* ----------------------------MEDIA QUERIES FOR SMALL SCREENS--------------------------------  */
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 80%;
+  }
+
+  .logo {
+    width: 7.25rem;
+  }
+  nav button {
+    padding: 0.7rem 0.9rem;
+  }
+  nav .lan-btn {
+    padding: 0.4rem 0.6rem;
+  }
+  .header-cont h1{
+    font-size: 1.9rem;
+    line-height:3.5rem;
+  }
+  .header-cont h3{
+    font-size: 1rem;
+  }
+  .header-cont p{
+    font-size: 0.8rem;
+  }
+  .email-signup button{
+    font-size: 0.8rem;
+    padding: 0.8rem 0.1rem;
+    width: 5rem;
+}
+.img-col, .text-col{
+  flex-basis: 100%;
+}
+.features{
+text-align: center;
+}
+.features h2{
+font-size: 1.8rem;
+text-align: center;
+}
+
+
+.features p{
+  font-size: 1rem;
+}
+.row:nth-child(2),.row:nth-child(4){
+  flex-direction: column-reverse;
+}
+
+.faq {
+  padding: 0.6rem 1%;
+}
+
+
+.accordian li label {
+  padding-left: 0;
+  padding-right: 0;
+  padding: 0.8rem 2rem;
+  margin: 0rem 0rem 0rem -2rem;
+}
+
+.accordian li{
+
+  padding-right: 0rem;
+
+}
+.accordian .content{
+
+  margin: 0rem 0rem 0rem -2rem;
+}
+
+.footer {
+  font-size: 03rem;
+}
+}
+.footer .row  li a{
+font-size: 4rem;
+}
+
