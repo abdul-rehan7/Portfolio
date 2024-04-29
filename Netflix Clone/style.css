@@ -144,3 +144,55 @@ nav button {
   font-weight: 500;
   font-size: 2rem;
 }
+/* <!-- --------------------------------------ACCORDIAN SECTION------------------------------------- --> */
+
+.accordian{
+  margin: 3.7rem;
+  width: 100%;
+  max-width: 40rem;
+}
+
+.accordian li{
+  list-style: none;
+  width: 100%;
+  padding: 0.3rem;
+}
+
+.accordian li label{
+  display: flex;
+  align-items: center;
+  padding: 1.2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background-color: #303030;
+  margin-bottom: 0.1rem;
+  cursor: pointer;
+  position: relative;
+}
+label::after{
+  content: '+';
+  font-size: 2.1rem;
+  position: absolute;
+  right: 1.2rem;
+  transition: transform 0.5s;
+}
+input[type="radio"]{
+  display: none;
+}
+.accordian .content{
+  background: #303030;
+  text-align: left;
+  padding: 0 1.2rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordian input[type="radio"]:checked + label + .content{
+max-height: 37rem;
+padding: 1.8rem 1.2rem;
+}
+.accordian input[type="radio"]:checked + label::after{
+  transform: rotate(225deg);
+}
+
