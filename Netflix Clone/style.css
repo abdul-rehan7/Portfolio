@@ -16,7 +16,7 @@ body {
     url(images/header-image.png);
   background-size: cover;
   background-position: center;
-  padding: 10px 8%;
+  padding: 10px 4rem;
   position: relative;
 }
 
@@ -134,9 +134,12 @@ nav button {
 /* <!-- --------------------------------------FAQ SECTION------------------------------------- --> */
 
 .faq {
-  padding: 0.6rem 12%;
+  display: flex;
+  flex-direction: column;
+  padding: 0.6rem 15rem;
   text-align: center;
   font-size: 1.1rem;
+  justify-content: center;
 }
 
 .faq h2 {
@@ -146,7 +149,7 @@ nav button {
 /* <!-- --------------------------------------ACCORDIAN SECTION------------------------------------- --> */
 
 .accordian {
-  margin: 3.7rem;
+  margin: 0;
   width: 100%;
   max-width: 40rem;
 }
@@ -197,18 +200,19 @@ input[type="radio"] {
 
 .faq .email-signup {
   max-width: 36rem;
-  margin: 1.2rem auto 3.7rem;
+
 }
 
 .faq small {
   font-size: 0.9rem;
+  margin-top: 2rem;
 }
 
 /* ---------------------FOOTER SECTION----------------------  */
 
 .footer {
   max-width: 100vw;
-  padding: 5rem 15% 2rem;
+  padding: 5rem 7rem 2rem;
   border-top: 0.4rem solid rgb(57, 56, 56);
   color: #777;
 }
@@ -219,8 +223,6 @@ input[type="radio"] {
 }
 
 .footer .col {
-  flex-direction: row;
-  flex-basis: 25%;
   flex-grow: 1;
   margin-bottom: 1.2rem;
 }
@@ -233,7 +235,6 @@ input[type="radio"] {
 }
 .footer .row {
   display: flex;
-  align-items: center;
 }
 .footer .lang-btn {
   color: white;
@@ -247,9 +248,13 @@ input[type="radio"] {
   margin-bottom: 1.2rem;
 }
 
-/* ----------------------------MEDIA QUERIES FOR SMALL SCREENS--------------------------------  */
+/* ----------------------------MEDIA QUERIES--------------------------------  */
 
-@media only screen and (max-width: 600px) {
+
+
+/* -----------FOR SMALL SCREENS---------------  */
+
+@media only screen and (max-width: 500px) {
   html {
     font-size: 80%;
   }
@@ -263,67 +268,73 @@ input[type="radio"] {
   nav .lan-btn {
     padding: 0.4rem 0.6rem;
   }
-  .header-cont h1{
-    font-size: 1.9rem;
-    line-height:3.5rem;
+  .header {
+    padding: 10px 1.4rem;
   }
-  .header-cont h3{
+  .header-cont h1 {
+    font-size: 1.9rem;
+    line-height: 3.5rem;
+  }
+  .header-cont h3 {
     font-size: 1rem;
   }
-  .header-cont p{
+  .header-cont p {
     font-size: 0.8rem;
   }
-  .email-signup button{
+  .email-signup button {
     font-size: 0.8rem;
     padding: 0.8rem 0.1rem;
     width: 5rem;
-}
-.img-col, .text-col{
-  flex-basis: 100%;
-}
-.features{
-text-align: center;
-}
-.features h2{
-font-size: 1.8rem;
-text-align: center;
-}
+  }
+  .img-col,
+  .text-col {
+    flex-basis: 100%;
+  }
+  .features {
+    text-align: center;
+  }
+  .features h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .features p {
+    font-size: 1rem;
+  }
+  .row:nth-child(2),
+  .row:nth-child(4) {
+    flex-direction: column-reverse;
+  }
+
+  .faq {
+    padding: 0.4rem 1rem;
+  }
+
+  .accordian li label {
+    padding-left: 0;
+    padding-right: 0;
+    padding: 0.8rem 1rem;
+    margin: 0rem 0rem 0rem 0rem;
+  }
 
 
-.features p{
-  font-size: 1rem;
+  .footer {
+    margin: 0;
+    padding: 3rem 3rem;
+  }
+  .footer .col a{
+    font-size: .5rem;
+    margin: .4rem .5rem;
+  }
+  .footer .row {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer .row li a {
+    font-size: 0.01rem;
+  }
 }
-.row:nth-child(2),.row:nth-child(4){
-  flex-direction: column-reverse;
-}
-
-.faq {
-  padding: 0.6rem 1%;
-}
-
-
-.accordian li label {
-  padding-left: 0;
-  padding-right: 0;
-  padding: 0.8rem 2rem;
-  margin: 0rem 0rem 0rem -2rem;
-}
-
-.accordian li{
-
-  padding-right: 0rem;
+/* =================EXTRA SMALL SCREENS============== */
+@media only screen and (max-width: 600px){
 
 }
-.accordian .content{
-
-  margin: 0rem 0rem 0rem -2rem;
-}
-
-.footer {
-  font-size: 03rem;
-}
-}
-.footer .row  li a{
-font-size: 4rem;
-}
-
