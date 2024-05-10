@@ -9,6 +9,7 @@ body {
   background-color: black;
   color: white;
 }
+
 .header {
   width: 100%;
   height: 100vh;
@@ -80,7 +81,15 @@ nav button {
   border-radius: 0.2rem;
   display: flex;
   align-items: center;
-  margin-top: 1rem;
+  margin: 1rem 1rem;
+  overflow: hidden;
+}
+ .features .email-signup {
+  background: white;
+  border-radius: 0.2rem;
+  display: flex;
+  align-items: center;
+  margin: 1rem 10rem;
   overflow: hidden;
 }
 
@@ -89,7 +98,7 @@ nav button {
   border: 0;
   outline: 0;
   font-size: 1rem;
-  margin-left: 1.5rem;
+  margin-left: 1.2rem;
 }
 .email-signup button {
   border: 0;
@@ -248,13 +257,12 @@ input[type="radio"] {
   margin-bottom: 1.2rem;
 }
 
+
 /* ----------------------------MEDIA QUERIES--------------------------------  */
-
-
 
 /* -----------FOR SMALL SCREENS---------------  */
 
-@media only screen and (min-width: 320px) {
+@media only screen and (max-width: 449px) {
   html {
     font-size: 80%;
   }
@@ -317,14 +325,13 @@ input[type="radio"] {
     margin: 0rem 0rem 0rem 0rem;
   }
 
-
   .footer {
     margin: 0;
     padding: 3rem 3rem;
   }
-  .footer .col a{
-    font-size: .5rem;
-    margin: .4rem .5rem;
+  .footer .col a {
+    font-size: 0.5rem;
+    margin: 0.4rem 0.5rem;
   }
   .footer .row {
     display: flex;
@@ -334,8 +341,8 @@ input[type="radio"] {
     font-size: 0.01rem;
   }
 }
-/* =================EXTRA SMALL SCREENS============== */
-@media only screen and (min-width: 500px){
+
+@media only screen and (min-width:500px) and (max-width: 950px) {
   html {
     font-size: 90%;
   }
@@ -352,7 +359,7 @@ input[type="radio"] {
   .header {
     padding: 10px 1.4rem;
   }
-  .header-cont{
+  .header-cont {
     margin-top: 0rem;
   }
   .header-cont h1 {
@@ -365,10 +372,10 @@ input[type="radio"] {
   .header-cont p {
     font-size: 0.8rem;
   }
-  .header-cont .email-signup{
+  .header-cont .email-signup {
     width: 27rem;
   }
-  .email-signup{
+  .email-signup {
     margin: 1rem 7rem;
   }
   .email-signup button {
@@ -407,14 +414,13 @@ input[type="radio"] {
     margin: 0rem 0rem 0rem 0rem;
   }
 
-
   .footer {
     margin: 0;
     padding: 3rem 3rem;
   }
-  .footer .col a{
-    font-size: .9rem;
-    margin: .4rem .5rem;
+  .footer .col a {
+    font-size: 0.9rem;
+    margin: 0.4rem 0.5rem;
   }
   .footer .row {
     display: flex;
