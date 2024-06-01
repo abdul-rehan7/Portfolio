@@ -35,7 +35,7 @@ const Navbar = () => {
         </div>
       </div>
       {/* LOWER NAVBAR  */}
-      <div className="lowerNavbar text-[9px] md:text-base drop-shadow-xl shadow flex justify-center md:space-x-16 space-x-3">
+      <div className="lowerNavbar text-[9px] md:text-base drop-shadow-xl shadow flex justify-center md:space-x-16 space-x-3 py-[3px]">
         <a href="">Home</a>
         <a href="">Top Rated</a>
         <a href="">Kids Wear</a>
