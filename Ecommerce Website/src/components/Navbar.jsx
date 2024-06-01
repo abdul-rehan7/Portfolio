@@ -2,8 +2,6 @@ import React from "react";
 import { IoMdSearch } from "react-icons/io";
 import { IoIosCart } from "react-icons/io";
 
-
-
 const Navbar = () => {
   return (
     <div>
@@ -37,8 +35,12 @@ const Navbar = () => {
         </div>
       </div>
       {/* LOWER NAVBAR  */}
-      <div className="lowerNavbar drop-shadow-xl shadow">
-
+      <div className="lowerNavbar text-[9px] md:text-base drop-shadow-xl shadow flex justify-center md:space-x-16 space-x-3">
+        <a href="">Home</a>
+        <a href="">Top Rated</a>
+        <a href="">Kids Wear</a>
+        <a href="">Mens Wear</a>
+        <a href="">Electronics</a>
       </div>
     </div>
   );
