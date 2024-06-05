@@ -1,6 +1,9 @@
 import React from "react";
-import { IoMdSearch } from "react-icons/io";
-import { IoIosCart } from "react-icons/io";
+import { Link } from "react-router-dom";
+import { IoMdSearch, IoIosCart } from "react-icons/io";
+import { FaCaretDown } from "react-icons/fa";
+
+import {} from "react-icons/io";
 
 const Navbar = () => {
   return (
@@ -35,15 +38,39 @@ const Navbar = () => {
         </div>
       </div>
       {/* LOWER NAVBAR  */}
-      <div className="lowerNavbar text-[9px] md:text-base drop-shadow-xl shadow flex justify-center md:space-x-16 space-x-3 py-[3px]">
-        <a href="">Home</a>
-        <a href="">Top Rated</a>
-        <a href="">Kids Wear</a>
-        <a href="">Mens Wear</a>
-        <a href="">Electronics</a>
+      <div className="lowerNavbar md:h-[2rem] h-[0.9rem] text-[0.45rem] md:text-base drop-shadow-xl shadow flex justify-center md:space-x-16 space-x-3 py-[2px]">
+        <Link to="/" className=" hover:text-green-600 transition-all">
+          Home
+        </Link>
+        <Link to="/TopRated" className=" hover:text-green-600 transition-all">
+          Top Rated
+        </Link>
+        <Link to="/KidsWear" className=" hover:text-green-600 transition-all">
+          Kids Wear
+        </Link>
+        <Link to="/MensWear" className=" hover:text-green-600 transition-all">
+          Mens Wear
+        </Link>
+        <Link
+          to="/Electronics"
+          className=" hover:text-green-600 transition-all"
+        >
+          Electronics
+        </Link>
+        <Link to="/Trending" className="group transition-all">
+          <span className="flex items-center hover:text-green-600  ">
+            Trending Items
+            <FaCaretDown className="ml-2" />
+          </span>
+          <div className="drop-down text-sm bg-white  space-y-2 items-center drop-shadow-none  flex-col hidden group-hover:flex py-3 mt-[6%] ">
+            <Link to="/TopRated">Top Rated</Link>
+            <Link to="/KidsWear">Kids Wear</Link>
+            <Link to="/MensWear">Mens Wear</Link>
+            <Link to="/Electronics">Electronics</Link>
+          </div>
+        </Link>
       </div>
     </div>
   );
 };
-
 export default Navbar;
