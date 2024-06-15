@@ -1,8 +1,10 @@
 import React from 'react'
+import Hero from '../../components/Hero'
 
 const kids = (props) => {
   return (
     <div>
+      <Hero line="New Collection for Kids" />
       <div className=''>
 
 <div className="h1 text-center py-4 font-bold md:text-4xl text-2xl">{props.title}</div>

@@ -5,7 +5,7 @@ import Item from '../components/Item'
 const Shop = () => {
   return (
     <div>
-      <Hero/>
+      <Hero line="Check Out our Most Popular Picks!"/>
       <Item/>
     </div>
   )

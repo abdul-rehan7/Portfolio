@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [menu, setMenu] = useState("Home");
   return (
+    <>
     <div className="flex justify-between border-b-[1px] border-[#0000002d] md:text-base text-xs md:px-6 md:py-4 p-[2%] items-center">
       <div className="logo flex space-x-2 items-center">
         <img
@@ -66,6 +67,46 @@ const Navbar = () => {
         </div>
       </div>
     </div>
+      <div className=" md:hidden text-[7px] lower py-[1px] flex justify-center">
+      <ul className="  flex space-x-7 ">
+        <li
+          className="cursor-pointer"
+          onClick={() => {
+            setMenu("Home");
+          }}
+        >
+          <Link to="/">Home</Link> 
+        </li>
+        <li
+          className="cursor-pointer"
+          onClick={() => {
+            setMenu("Contact");
+          }}
+        >
+          <Link to="/mens">Mens</Link>
+        </li>
+        <li
+          className="cursor-pointer"
+          onClick={() => {
+            setMenu("About");
+          }}
+        >
+          <Link to="/kids">Kids</Link>
+
+        </li>
+        <li
+          className="cursor-pointer"
+          onClick={() => {
+            setMenu("Services");
+          }}
+        >
+          <Link to="/womens">Womens</Link>{" "}
+    
+        </li>
+      </ul>
+      </div>
+    </>
+
   );
 };
 
