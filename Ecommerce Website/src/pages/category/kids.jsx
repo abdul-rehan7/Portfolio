@@ -1,10 +1,11 @@
 import React from 'react'
 
-const Item = (props) => {
+const kids = (props) => {
   return (
-<div className=''>
+    <div>
+      <div className=''>
 
-<div className="h1 text-center py-4 font-bold md:text-4xl text-2xl">TOP SELLING</div>
+<div className="h1 text-center py-4 font-bold md:text-4xl text-2xl">{props.title}</div>
 <div className=' flex flex-col space-y-4 md:space-y-0 md:space-x-5 md:flex-row justify-between py-[2%] md:px-[4%] px-[5%]'>
   
     
@@ -49,7 +50,8 @@ const Item = (props) => {
 
 
 </div>
+    </div>
   )
 }
 
-export default Item
+export default kids
