@@ -4,7 +4,7 @@ import Hero from '../../components/Hero'
 const mens = (props) => {
   return (
     <div className='bg-white'>
-         <Hero line="Our Top Collection for Mens" />
+         <Hero line="Our Top Collection for Mens" image="/images/hero-mens.png" />
       <div className=''>
 
 <div className="h1 text-center py-4 font-bold md:text-4xl text-2xl">{props.title}</div>

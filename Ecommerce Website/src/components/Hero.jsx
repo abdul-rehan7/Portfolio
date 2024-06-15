@@ -9,7 +9,7 @@ const Hero = (props) => {
         <h2 className="text-xs font-medium">NEW ARRIVALS ONLY</h2>
         <div>
        
-          <p className="text-4xl md:w-[80%]  w-[90%] md:text-6xl md:font-semibold font-bold">
+          <p className="text-4xl md:w-[30vw]  w-[90%] md:text-6xl md:font-semibold font-bold">
        
            {props.line}
           </p>
@@ -22,7 +22,7 @@ const Hero = (props) => {
       </div>
       <div className="hero-right flex justify-between">
         <div></div>
-        <img src="/images/hero.png" className=" md:w-[80%] w-[100%]" alt="" />
+        <img src={props.image} className=" md:my-0 my-7 md:w-[70%] w-[100%]" alt="" />
       </div>
     </div>
   );
