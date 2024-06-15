@@ -6,7 +6,7 @@ const Navbar = () => {
   const [menu, setMenu] = useState("Home");
   return (
     <>
-    <div className="flex justify-between border-b-[1px] border-[#0000002d] md:text-base text-xs md:px-6 md:py-4 p-[2%] items-center">
+    <div className="flex justify-between bg-white border-b-[1px] border-[#0000002d] md:text-base text-xs md:px-6 md:py-4 p-[2%] items-center">
       <div className="logo flex space-x-2 items-center">
         <img
           className=" md:w-[10%] md:h-[7%]  w-[15%] h-[100%]"
@@ -67,7 +67,7 @@ const Navbar = () => {
         </div>
       </div>
     </div>
-      <div className=" md:hidden text-[7px] lower py-[1px] flex justify-center">
+      <div className=" md:hidden text-[7px] bg-white py-[1px] flex justify-center">
       <ul className="  flex space-x-7 ">
         <li
           className="cursor-pointer"

@@ -5,6 +5,7 @@ import Shop from "./pages/Shop";
 import Products from "./pages/Products";
 import Cart from "./pages/Cart";
 import LoginSignUp from "./pages/LoginSignUp";
+import SignUp from "./pages/SignUp";
 import Mens from "./pages/category/mens"
 import Womens from "./pages/category/womens"
 import Kids from "./pages/category/kids"
@@ -25,6 +26,7 @@ function App() {
 
         <Route path="/cart" element={<Cart />} />
         <Route path="/login" element={<LoginSignUp />} />
+        <Route path="/signup" element={<SignUp />} />
         </Routes>
       </BrowserRouter>
     </>

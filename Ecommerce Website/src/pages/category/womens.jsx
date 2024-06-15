@@ -3,7 +3,7 @@ import Hero from '../../components/Hero'
 
 const womens = (props) => {
   return (
-    <div>
+    <div className='bg-white'>
          <Hero  line="Latest Collection for Womens" />
       <div className=''>
 

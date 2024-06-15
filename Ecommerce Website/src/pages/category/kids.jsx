@@ -3,11 +3,11 @@ import Hero from '../../components/Hero'
 
 const kids = (props) => {
   return (
-    <div>
+    <div className='bg-white'>
       <Hero line="New Collection for Kids" />
       <div className=''>
 
-<div className="h1 text-center py-4 font-bold md:text-4xl text-2xl">{props.title}</div>
+<div className=" h1 text-center py-4 font-bold md:text-4xl text-2xl">{props.title}</div>
 <div className=' flex flex-col space-y-4 md:space-y-0 md:space-x-5 md:flex-row justify-between py-[2%] md:px-[4%] px-[5%]'>
   
     
