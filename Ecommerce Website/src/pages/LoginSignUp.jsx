@@ -14,13 +14,14 @@ const LoginSignUp = () => {
           <p className="text-left">Username:</p>
           <input
             className="w-[100%] border-[1px] border-[#cdcdcd] py-2 px-1 rounded-sm"
-            type="email"
+            type="text"
             placeholder="Enter Your Username"
           />
         </div>
         <div>
           <p className="text-left">Email:</p>
           <input
+            required
             className="w-[100%] border-[1px] border-[#cdcdcd] py-2 px-1 rounded-sm"
             type="email"
             placeholder="Enter Your Email"

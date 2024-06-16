@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const Hero = (props) => {
   return (
-    <div className="Hero flex justify-between flex-col md:flex-row bg-green-200 p-[7%]">
+    <div className="Hero flex justify-between flex-col md:flex-row bg-gray-100 p-[7%]">
       <div className="hero-left space-y-2">
         <h2 className="text-xs font-medium">NEW ARRIVALS ONLY</h2>
         <div>

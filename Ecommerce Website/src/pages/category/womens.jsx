@@ -1,5 +1,7 @@
 import React from 'react'
 import Hero from '../../components/Hero'
+import Footer from "../../components/footer"
+import Bar from "../../components/Bar"
 
 const womens = (props) => {
   return (
@@ -12,7 +14,7 @@ const womens = (props) => {
   
     
     <div className='item bg-gray-300 text-center p-2  w-[90vw] rounded-md'>
-      <img src="/images/P1.jpg"/*{props.image}*/ alt="" />
+      <img  className='md:h-[50vh] h-[80vh] w-[100%]'src="/images/womens/p1.jpg"/*{props.image}*/ alt="" />
       <p className=' text-lg font-bold'>{props.name}I AM ITEM</p>
       <div className="item-prices">
         <div className="price-new ">{props.new_price}10.4$</div>
@@ -20,7 +22,7 @@ const womens = (props) => {
       </div>
     </div>
     <div className='item bg-gray-300 text-center p-2  w-[90vw] rounded-md'>
-      <img src="/images/P1.jpg"/*{props.image}*/ alt="" />
+      <img className='md:h-[50vh] h-[80vh] w-[100%]' src="/images/womens/p2.jpg"/*{props.image}*/ alt="" />
       <p className=' text-lg font-bold'>{props.name}I AM ITEM</p>
       <div className="item-prices">
         <div className="price-new ">{props.new_price}10.4$</div>
@@ -28,7 +30,7 @@ const womens = (props) => {
       </div>
     </div>
     <div className='item bg-gray-300 text-center p-2  w-[90vw] rounded-md'>
-      <img src="/images/P1.jpg"/*{props.image}*/ alt="" />
+      <img className='md:h-[50vh] h-[80vh] w-[100%]' src="/images/womens/p3.jpg"/*{props.image}*/ alt="" />
       <p className=' text-lg font-bold'>{props.name}I AM ITEM</p>
       <div className="item-prices">
         <div className="price-new ">{props.new_price}10.4$</div>
@@ -36,7 +38,7 @@ const womens = (props) => {
       </div>
     </div>
     <div className='item bg-gray-300 text-center p-2  w-[90vw] rounded-md'>
-      <img src="/images/P1.jpg"/*{props.image}*/ alt="" />
+      <img className='md:h-[50vh] h-[80vh] w-[100%]' src="/images/womens/p4.jpg"/*{props.image}*/ alt="" />
       <p className=' text-lg font-bold'>{props.name}I AM ITEM</p>
       <div className="item-prices">
         <div className="price-new ">{props.new_price}10.4$</div>
@@ -52,6 +54,8 @@ const womens = (props) => {
 
 
 </div>
+<Footer/>
+<Bar/>
     </div>
   )
 }

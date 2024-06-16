@@ -9,7 +9,7 @@ const Item = (props) => {
   
     
     <div className='item bg-gray-300 text-center p-2  w-[90vw] rounded-md'>
-      <img src="/images/P1.jpg"/*{props.image}*/ alt="" />
+    <img  className='md:h-[50vh] h-[80vh] w-[100%]'src="/images/kids/p2.jpg"/*{props.image}*/ alt="" />
       <p className=' text-lg font-bold'>{props.name}I AM ITEM</p>
       <div className="item-prices">
         <div className="price-new ">{props.new_price}10.4$</div>
@@ -17,7 +17,7 @@ const Item = (props) => {
       </div>
     </div>
     <div className='item bg-gray-300 text-center p-2  w-[90vw] rounded-md'>
-      <img src="/images/P1.jpg"/*{props.image}*/ alt="" />
+    <img  className='md:h-[50vh] h-[80vh] w-[100%]'src="/images/mens/p3.jpg"/*{props.image}*/ alt="" />
       <p className=' text-lg font-bold'>{props.name}I AM ITEM</p>
       <div className="item-prices">
         <div className="price-new ">{props.new_price}10.4$</div>
@@ -25,7 +25,7 @@ const Item = (props) => {
       </div>
     </div>
     <div className='item bg-gray-300 text-center p-2  w-[90vw] rounded-md'>
-      <img src="/images/P1.jpg"/*{props.image}*/ alt="" />
+    <img  className='md:h-[50vh] h-[80vh] w-[100%]'src="/images/kids/p4.jpg"/*{props.image}*/ alt="" />
       <p className=' text-lg font-bold'>{props.name}I AM ITEM</p>
       <div className="item-prices">
         <div className="price-new ">{props.new_price}10.4$</div>
@@ -33,7 +33,7 @@ const Item = (props) => {
       </div>
     </div>
     <div className='item bg-gray-300 text-center p-2  w-[90vw] rounded-md'>
-      <img src="/images/P1.jpg"/*{props.image}*/ alt="" />
+    <img  className='md:h-[50vh] h-[80vh] w-[100%]'src="/images/mens/p4.jpg"/*{props.image}*/ alt="" />
       <p className=' text-lg font-bold'>{props.name}I AM ITEM</p>
       <div className="item-prices">
         <div className="price-new ">{props.new_price}10.4$</div>
