@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #ffffff;
+  --secondary: #f4ce14;
+  --third: #000000;
+}
+@layer components {
+  .icon_wrapper {
+    @apply bg-gray-200 rounded-md p-[4px] text-[1rem] cursor-pointer 
+hover:bg-[var(--secondary)] hover:text-[var(--primary)];
+  }
+}
