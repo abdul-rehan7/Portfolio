@@ -4,12 +4,46 @@
 
 :root {
   --primary: #ffffff;
-  --secondary: #f4ce14;
+  --secondary: #00a900;
   --third: #000000;
 }
 @layer components {
   .icon_wrapper {
     @apply bg-gray-200 rounded-md p-[4px] text-[1rem] cursor-pointer 
 hover:bg-[var(--secondary)] hover:text-[var(--primary)];
+  }
+  .Nav_Link:hover {
+    color: var(--secondary);
+    transition: all 0.4s;
+  }
+  .Nav_Link::after {
+    position: absolute;
+    content: "";
+    background-color: var(--secondary);
+    height: 2px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    scale: 0;
+    transform-origin: left;
+    transition: all 0.4s;
+  }
+  .Nav_Link:hover::after {
+    scale: 1;
+  }
+  .theme-btn {
+    display: flex;
+    background-color: var(--secondary);
+    height: 1.8rem;
+    width: 4rem;
+    border-radius: 5rem;
+    padding: 2px;
+    justify-content: start;
+  }
+  .theme-btn .cir {
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: white;
+    border-radius: 5rem;
   }
 }
