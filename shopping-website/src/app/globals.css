@@ -47,3 +47,6 @@ hover:bg-[var(--secondary)] hover:text-[var(--primary)];
     border-radius: 5rem;
   }
 }
+body{
+  overflow-x: hidden;
+}
