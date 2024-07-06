@@ -48,7 +48,7 @@ const NavBar = () => {
   return (
     <>
       {/* TOP NAVBAR  */}
-      <div className="border-b border-gray-300 hidden sm:block ">
+      <div className="border-b border-gray-300 flex  sm:block ">
         <div className="container py-4">
           <div className="flex justify-between items-center">
             <div className="hidden lg:flex gap-2">
@@ -66,11 +66,11 @@ const NavBar = () => {
               </div>
             </div>
 
-            <div className="text-gray-400 text-[.9rem]">
+            <div className="text-gray-400 lg:text-[.9rem] text-[.5rem]">
               <b>FREE SHIPPING</b> THIS WEEK ORDER OVER - $55
             </div>
 
-            <div className="flex gap-5">
+            <div className="lg:flex gap-5 hidden">
               <select
                 className="text-gray-400 text-[.8rem] w-[5rem]"
                 name="currency"
@@ -89,9 +89,10 @@ const NavBar = () => {
                 <option value="French">French</option>
                 <option value="German">German</option>
               </select>
+          
+            </div>
             <div className="theme-btn " onClick={handleClick}>
               <div className="cir"></div>
-            </div>
             </div>
           </div>
         </div>
