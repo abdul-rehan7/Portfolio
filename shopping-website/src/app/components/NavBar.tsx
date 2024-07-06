@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { BsSearch } from "react-icons/bs";
 import { BiUser } from "react-icons/bi";
@@ -6,7 +7,44 @@ import { FiHeart } from "react-icons/fi";
 import { HiOutlineShoppingBag } from "react-icons/hi";
 import Link from "next/link";
 
+
 const NavBar = () => {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const handleClick = () => {
+    setIsDarkMode(!isDarkMode);
+    // Toggle color variables
+    if (isDarkMode) {
+      document.documentElement.style.setProperty("--primary", "#ffffff");
+      document.documentElement.style.setProperty("--secondary", "#00a900");
+      document.documentElement.style.setProperty("--third", "#000000");
+    } else {
+      document.documentElement.style.setProperty("--primary", "#1a1a1a");
+      document.documentElement.style.setProperty("--secondary", "#009FBD");
+      document.documentElement.style.setProperty("--third", "#ffffff");
+    }
+  };
+
+  useEffect(() => {
+    const themeBtn = document.querySelector(".theme-btn");
+    const circle = document.querySelector(".theme-btn") as HTMLElement | null;
+
+    const handleClick = () => {
+      if (circle) {
+        circle.style.justifyContent = circle.style.justifyContent === "end" ? "start" : "end";
+      }
+    };
+
+    if (themeBtn) {
+      themeBtn.addEventListener("click", handleClick);
+    }
+
+    return () => {
+      if (themeBtn) {
+        themeBtn.removeEventListener("click", handleClick);
+      }
+    };
+  }, []);
   return (
     <>
       {/* TOP NAVBAR  */}
@@ -51,7 +89,7 @@ const NavBar = () => {
                 <option value="French">French</option>
                 <option value="German">German</option>
               </select>
-            <div className="theme-btn">
+            <div className="theme-btn " onClick={handleClick}>
               <div className="cir"></div>
             </div>
             </div>
@@ -73,7 +111,7 @@ const NavBar = () => {
             <BsSearch className="hidden right-0 top-0 mr-3 mt-3  text-gray-400" />
           </div>
 
-          <div className="hidden lg:flex gap-4 test-gray-500 text-[1.5rem]">
+          <div className="hidden lg:flex gap-4 text-[var(--third)] text-[1.5rem]">
             <div className="relative">
             <BiUser />
             </div>
@@ -95,9 +133,9 @@ const NavBar = () => {
         </div>
       </div>
       {/* LOWER NAVBAR  */}
-      <div className="hidden lg:block ">
+      <div className="text-[0.4rem] text-[var(--third)] lg:text-base lg:block ">
         <div className="container">
-          <div className="flex w-fit mx-auto gap-10 py-4">
+          <div className="flex w-fit mx-auto gap-2 lg:gap-10 py-4">
             <Link href="#" className="Nav_Link relative">
               HOME
             </Link>
