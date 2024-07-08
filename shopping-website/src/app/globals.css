@@ -4,6 +4,7 @@
 
 body{
   background-color: var(--primary);
+  transition: .2s;
 }
 :root {
   --primary: #ffffff;
