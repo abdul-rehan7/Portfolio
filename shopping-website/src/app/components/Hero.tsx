@@ -23,16 +23,16 @@ const Hero = () => {
     },
     {
       id: 1,
-      img: "imgs/1.png",
-      title: "Trending Item",
-      mainTitle: "Women's Latest Fashion Sale",
-      price: "20",
+      img: "imgs/2.png",
+      title: "Exclusive Sale",
+      mainTitle: "Black Friday Special",
+      price: "30",
     },
     {
       id: 2,
-      img: "imgs/1.png",
-      title: "Trending Item",
-      mainTitle: "Women's Latest Fashion Sale",
+      img: "imgs/3.png",
+      title: "Exclusive Offer",
+      mainTitle: "CYBER MONDAY",
       price: "20",
     },
   ];
