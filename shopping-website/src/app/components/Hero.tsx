@@ -11,7 +11,8 @@ const Hero = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    pauseOnHover: false,
+    pauseOnHover:false,
+    arrows:false,
   };
   const slideData = [
     {
@@ -39,7 +40,7 @@ const Hero = () => {
 
   return (
     <div>
-      <div className="container pt-6 lg:pt-0">
+      <div className="container pt-6 lg:pt-0 lg:px-7">
         <Slider {...settings}>
           {slideData.map((item) => (
             <Slides

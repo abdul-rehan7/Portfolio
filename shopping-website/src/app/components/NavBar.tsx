@@ -91,7 +91,7 @@ const NavBar = () => {
               </select>
           
             </div>
-            <div className="theme-btn " onClick={handleClick}>
+            <div className="theme-btn cursor-pointer " onClick={handleClick}>
               <div className="cir"></div>
             </div>
           </div>
