@@ -1,3 +1,5 @@
+import Bar from "./components/Bar";
+import BottomSection from "./components/BottomSection";
 import Hero from "./components/Hero";
 import NavBar from "./components/NavBar";
 import NewProducts from "./components/NewProducts";
@@ -11,6 +13,8 @@ export default function Home() {
         <Hero/>
         <NewProducts/>
         <Testimonial/>
+        <BottomSection/>
+        <Bar/>
       </main>
     </>
   );
