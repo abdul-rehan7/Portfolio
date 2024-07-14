@@ -1,31 +1,42 @@
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
+import GridBackgroundDemo from "./bg";
+import { TextGenerateEffect } from "./TextGenEffect";
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36">
-      <div className="pb-20 pt-36">
-        <Spotlight
-          className="-top-7 w-[50vw]  left-4 md:-left-22 md:-top-20 h-full"
-          fill="white"
-        />
-        <Spotlight
-          className="-top-7 left-36  md:left-[30rem] md:-top-20 h-[70vh] w-[30vw]"
-          fill="white"
-        />
-        <Spotlight
-          className="-top-2 left-80 md:left-[60rem] md:-top-20 h-[80vh]  w-[50vw] "
-          fill="white"
-        />
-      </div>
+    <div className="pb-20 pt-18 flex flex-col items-center">
+      <div className="pb-1 pt-36 flex flex-col items-center">
+        <div className="pb-20 pt-36 w-full flex flex-col items-center">
+          <Spotlight
+            className="-top-12 w-[70vw] left-4 md:-left-22 md:-top-20 h-full"
+            fill="#a6a6a6"
+          />
+          <Spotlight
+            className="-top-7 left-[60%]  md:left-[60%] md:-top-20 md:h-[60vh]  h-[30vh] w-[100vw]"
+            fill="#a6a6a6"
+          />
+        </div>
 
-      <div className="h-[50rem] w-[100vw] dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center">
-      {/* Radial gradient for the container to give a faded look */}
-      <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-      <p className="text-4xl sm:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-8">
-        Backgrounds
-      </p>
-    </div>
+        <GridBackgroundDemo />
+
+        <div className="absolute my-10 z-10 flex w-[100vw] justify-center">
+          <div className="max-w-[100vw] md:max-w-2xl lg:max-w-[90vw] flex flex-col justify-center items-center">
+            <h2 className="text-xs md:text-base uppercase tracking-widest text-center text-blue-100">
+              Dynamic web magic with next.js
+            </h2>
+
+            <TextGenerateEffect
+              className="text-center text-[1.3rem] md:text-4xl lg:text-7xl "
+              words="Transforming Concepts Into Seamless Experiences"
+            />
+
+            <p className="text-center text-xs mt-2">
+              Hi, I&apos;m Rehan, a Website Developer from Pakistan
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
