@@ -31,7 +31,7 @@ const Hero = () => {
               words="Transforming Concepts Into Seamless Experiences"
             />
 
-            <p className="text-center text-xs mt-2">
+            <p className="text-center text-xs md:text-xl mt-2">
               Hi, I&apos;m Rehan, a Website Developer from Pakistan
             </p>
           </div>
