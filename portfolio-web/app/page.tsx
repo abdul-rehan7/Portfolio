@@ -7,7 +7,7 @@ import Grid from "@/components/Grid"
 export default function Home() {
   return (
     <main>
-      <div className="flex flex-col justify-center max-w-7xl ">
+      <div className="flex flex-col justify-center max-w-[100vw] ">
         <FloatingNav navItems={[{name: "Home", link: ""},{name: "Projects", link: ""},{name: "About", link: ""},{name: "Contact", link: ""}]}/>
         <Hero />
         <Grid/>
