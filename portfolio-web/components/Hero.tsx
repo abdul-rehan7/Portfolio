@@ -6,7 +6,7 @@ import MagicButton from "./MagicButton";
 
 const Hero = () => {
   return (
-    <div className="pb-20 sm:pt-0 max-w-[100vw] w-[100%] flex flex-col items-center">
+    <div className="pb-20 sm:pt-0 max-w-[100vw] overflow-hidden w-full flex flex-col items-center">
       <div className="pb-1 pt-20 md:pt-28 flex flex-col items-center">
         <div className="pb-20  w-[100%] flex  items-center">
           <Spotlight
@@ -14,7 +14,7 @@ const Hero = () => {
             fill="white"
           />
           <Spotlight
-            className="-top-2 z-50 left-[12rem] md:left-[50vw] md:-top-12 md:h-[60vh]  h-[30vh] w-[50%]"
+            className="-top-2 z-50 left-[12rem] md:left-[55vw] md:-top-12 md:h-[60vh]  h-[30vh] w-[50%]"
             fill="white"
           />
         </div>
