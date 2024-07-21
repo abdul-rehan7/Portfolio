@@ -13,17 +13,17 @@ export const navItems = [
       className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
       imgClassName: "w-full h-full",
       titleClassName: "justify-end",
-      img: "/1.png",
+      img: "/b1.svg",
       spareImg: "",
     },
     {
       id: 2,
-      title: "I'm very flexible zone communications",
-      description: "lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been ",
+      title: "",
+      description: " ",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
       titleClassName: "justify-start",
-      img: "/2.png",
+      img: "",
       spareImg: "",
     },
     {
@@ -33,7 +33,7 @@ export const navItems = [
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been ",
       titleClassName: "justify-center",
-      img: "/3.png",
+      img: "",
       spareImg: "",
     },
     {
@@ -66,16 +66,6 @@ export const navItems = [
       titleClassName: "justify-center md:max-w-full max-w-60 text-center",
       img: "/6.png",
       spareImg: "",
-    },
-    {
-      id: 6,
-      title: "Do you want to start a project together?",
-      description: "",
-      className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-      imgClassName: "",
-      titleClassName: "justify-center md:max-w-full max-w-60 text-center",
-      img: "/7.png",
-      spareImg: "",
     }
   ];
   
@@ -84,7 +74,7 @@ export const navItems = [
       id: 1,
       title: "3D Solar System Planets to Explore",
       des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-      img: "/p1.svg",
+      img: "/b1.svg",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
       link: "https://github.com/adrianhajdin?tab=repositories",
     },
