@@ -415,10 +415,10 @@ export function GlobeDemo() {
             We Provide Services worldwide
           </h2>
           <p className="text-center text-base md:text-base font-normal pb-5 text-neutral-700 dark:text-neutral-200 max-w-md mx-auto">
-            This globe is interactive and customizable. 
+            This globe is interactive 
           </p>
         </motion.div>
-        <div className="absolute w-full  bottom-0 inset-x-0 h-5 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40" />
+        <div className="absolute w-full  bottom-0 inset-x-0 h-5 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black-200 to-white z-40" />
         <div className="absolute w-full -bottom-20 h-56 md:h-full z-10">
           <World data={sampleArcs} globeConfig={globeConfig} />
         </div>
