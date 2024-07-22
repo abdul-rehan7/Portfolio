@@ -1,5 +1,6 @@
 import { cn } from "@/utils/cn";
-import {GlobeDemo} from "@/components/ui/GridGlobe"
+import { GlobeDemo } from "@/components/ui/GridGlobe";
+import { div } from "three/examples/jsm/nodes/Nodes.js";
 
 export const BentoGrid = ({
   className,
@@ -35,7 +36,7 @@ export const BentoGridItem = ({
   description?: string | React.ReactNode;
   img?: string;
   icon?: React.ReactNode;
-  imgClassName?: React.ReactNode;
+  imgClassName?: string;
 }) => {
   return (
     <div
@@ -44,25 +45,41 @@ export const BentoGridItem = ({
         className
       )}
     >
-      <div className="w-full h-full absolute  ">
+      <div className="w-full h-full absolute   ">
         {img && (
           <img
-            className={cn(imgClassName, "w-full rounded-2xl h-full object-cover object-center ")}
+            className={cn(
+              imgClassName,"w-full h-full  object-cover object-center"
+            )}
             src={img}
           />
         )}
-       
       </div>
       <div className="p-5   md:p-3 flex flex-col relative rounded-md  ">
         {icon}
-        <div className=" md:text-3xl w-[50%] text-md font-sans transition duration-200 translate-x-0 group-hover/bento:translate-x-2 font-bold text-neutral-600 dark:text-neutral-200 mb-2 mt-2">
+        <div className=" md:text-3xl w-[80%] text-md font-sans transition duration-200 translate-x-0 group-hover/bento:translate-x-2 font-bold text-neutral-600 dark:text-neutral-200 mb-2 mt-2">
           {title}
         </div>
         <div className="font-sans transition duration-200 translate-x-0 group-hover/bento:translate-x-2 font-normal text-neutral-600 text-xs dark:text-neutral-300">
           {description}
-
         </div>
-        {id === 2 &&  <GlobeDemo/> }
+        {id === 2 && <GlobeDemo />}
+        {id === 4 && (
+          <div className="w-[80vw] md:w-[70vw] md:h-[70vh] h-[80%] object-cover md:mt-0 md:ml-36 mt-10  ml-16
+            ">
+          {(
+          <img src="/b4.svg"/>
+          )}
+        </div>
+        )}
+        {id === 5 && (
+          <div className="w-[80vw] md:w-[100vw] md:h-[100vh] h-[80%] object-cover md:mt-32 md:ml-64 mt-0  ml-10
+            ">
+          {(
+          <img src="/b5.svg"/>
+          )}
+        </div>
+        )}
       </div>
     </div>
   );
