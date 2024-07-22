@@ -59,12 +59,12 @@ export const navItems = [
     },
     {
       id: 6,
-      title: "Do you want to start a project together?",
+      title: "",
       description: "",
-      className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-      imgClassName: "bg-red-500",
-      titleClassName: "justify-left md:max-w-full max-w-60 text-center",
-      img: "/grid.svg",
+      className: "lg:col-span-3 text-4xl md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
+      imgClassName: "w-full rounded-2xl h-full object-cover object-center absolute right-0 ",
+      titleClassName: "justify-end",
+      img: "",
       spareImg: "",
     }
   ];
