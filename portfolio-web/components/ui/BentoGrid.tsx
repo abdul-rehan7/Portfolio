@@ -49,7 +49,8 @@ export const BentoGridItem = ({
         {img && (
           <img
             className={cn(
-              imgClassName,"w-full h-full  object-cover object-center"
+              imgClassName,
+              "w-full h-full  object-cover object-center"
             )}
             src={img}
           />
@@ -65,20 +66,42 @@ export const BentoGridItem = ({
         </div>
         {id === 2 && <GlobeDemo />}
         {id === 4 && (
-          <div className="w-[80vw] md:w-[70vw] md:h-[70vh] h-[80%] object-cover md:mt-0 md:ml-36 mt-10  ml-16
-            ">
-          {(
-          <img src="/b4.svg"/>
-          )}
-        </div>
+          <div
+            className="w-[80vw] md:w-[70vw] md:h-[70vh] h-[80%] object-cover md:mt-0 md:ml-36 mt-10  ml-16
+            "
+          >
+            {<img src="/b4.svg" />}
+          </div>
         )}
         {id === 5 && (
-          <div className="w-[80vw] md:w-[100vw] md:h-[100vh] h-[80%] object-cover md:mt-32 md:ml-64 mt-0  ml-10
-            ">
-          {(
-          <img src="/b5.svg"/>
-          )}
-        </div>
+          <div
+            className="w-[80vw] md:w-[100vw] md:h-[100vh] h-[80%] object-cover md:mt-32 md:ml-64 mt-0  ml-10
+            "
+          >
+            {<img src="/b5.svg" />}
+          </div>
+        )}
+        {id === 3 && (
+          <div className="flex gap-1 mt-16 lg:gap-2 w-fit absolute -right-3 lg:-right-2">
+            <div className="flex flex-col gap-2  ">
+              {['TypeScript','Next.Js', 'React.Js'].map((item)=>(
+                <span key={item} className="py-2 lg:px-3 px-3 text-xs lg:text-base text-[#a6aadcdf] opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]">
+                  {item}
+                </span>
+              ))}
+              <span className="py-4 px-3 rounded-lg text-center bg-[#10132E]"/>
+
+            </div>
+            <div className="flex flex-col gap-2  ">
+              <span className="py-4 px-3 rounded-lg text-center bg-[#10132E]"/>
+              {['Tailwind CSS','Aceternity UI','ShadCN UI'].map((item2)=>(
+                <span key={item2} className="py-2 lg:px-3 px-3 text-xs lg:text-base text-[#a6aadcdf] opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]">
+                  {item2}
+                </span>
+              ))}
+
+            </div>
+          </div>
         )}
       </div>
     </div>
