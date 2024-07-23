@@ -7,7 +7,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Abdul Rehan - Website Developer",
-  description: "Modern and Minimalist Developer",
+  description: "Modern and Minimalist Developer  ",
+  
 };
 
 export default function RootLayout({
@@ -18,7 +19,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="shortcut icon" href="/logo.png" type="image/x-icon" />
+      <meta property="og:image" content="/logo.png" />
+      <link rel="shortcut icon" href="/logo.png" type="image/x-icon" />
       </head>
       <body className={inter.className}>
         <ThemeProvider
