@@ -68,15 +68,15 @@ export const BentoGridItem = ({
         {id === 2 && <GlobeDemo />}
         {id === 4 && (
           <div
-            className="w-[80vw] transition duration-200 translate-x-0 group-hover/bento:translate-x-2 md:w-[70vw] md:h-[70vh] h-[80%] object-cover md:mt-0 md:ml-36 mt-10  ml-16
+            className="w-[100rem] transition duration-200 translate-x-0 group-hover/bento:translate-x-2 md:w-[70vw] md:h-[70vh] h-[100rem] object-cover md:-mt-5 md:ml-36 -mt-24  ml-36
             "
           >
-            {<img src="/b4.svg" />}
+            {<img className="h-[65vh] w-[65vw] md:h-[20vh] md:w-[20vw]" src="/b4.svg" />}
           </div>
         )}
         {id === 5 && (
           <div
-            className="w-[80vw] transition duration-200 translate-x-0 group-hover/bento:translate-x-2 md:w-[100vw] md:h-[100vh] h-[80%] object-cover md:mt-32 md:ml-64 mt-0  ml-10
+            className="w-[80vw] transition duration-200 translate-x-0 group-hover/bento:translate-x-2 md:w-[100vw] md:h-[100vh] h-[80%] object-cover md:mt-32 md:ml-64 -mt-7  ml-16
             "
           >
             {<img src="/b5.svg" />}
@@ -108,12 +108,31 @@ export const BentoGridItem = ({
             </div>
           </div>
         )}
-        {id === 6 && (
-          <BackgroundGradientAnimation>
-            <div className="absolute z-50 object-cover object-center flex items-center  justify-center text-white ">
-              <button>CLICK ME</button>
+     {id === 6 && (
+          <div className="flex transition duration-200 translate-x-0 group-hover/bento:translate-x-2 gap-1 mt-7 lg:mt-24 lg:gap-2 w-fit absolute -right-3 lg:-right-2">
+            <div className="flex flex-col gap-2  ">
+              {["Frontend Development", "UI/UX Design", "SEO Optimization"].map((item) => (
+                <span
+                  key={item}
+                  className="py-4 md:py-2 lg:px-4 px-4 text-sm lg:text-base text-[#a6aadcdf] opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                >
+                  {item}
+                </span>
+              ))}
+              <span className="py-6 md:py-4 px-3 rounded-lg text-center bg-[#141838]" />
             </div>
-          </BackgroundGradientAnimation>
+            <div className="flex flex-col gap-2  ">
+              <span className="py-6 md:py-4 px-3 rounded-lg text-center bg-[#141838]" />
+              {["API Integration", "Consultation", "Web Solutions"].map((item2) => (
+                <span
+                  key={item2}
+                  className="py-4 md:py-2 lg:px-4 px-4 text-sm lg:text-base text-[#a6aadcdf] opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                >
+                  {item2}
+                </span>
+              ))}
+            </div>
+          </div>
         )}
       </div>
     </div>

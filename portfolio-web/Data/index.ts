@@ -29,7 +29,7 @@ export const navItems = [
     {
       id: 3,
       title: "My tech stack",
-      description: "Constantly Improving",
+      description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been ",
       titleClassName: "justify-center",
@@ -59,7 +59,7 @@ export const navItems = [
     },
     {
       id: 6,
-      title: "",
+      title: "Services I Offer",
       description: "",
       className: "lg:col-span-3 text-4xl md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
       imgClassName: "w-full rounded-2xl h-full object-cover object-center absolute right-0 ",
