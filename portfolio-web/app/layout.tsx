@@ -23,6 +23,7 @@ export default function RootLayout({
       <link rel="shortcut icon" href="/logo.png" type="image/x-icon" />
       </head>
       <body className={inter.className}>
+        
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
