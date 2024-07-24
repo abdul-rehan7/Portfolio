@@ -124,11 +124,9 @@ html, body {
     transform: rotate(360deg);
   }
 }
-
-
-
-
-
+#loader{
+  transition: 2s ease-in-out ;
+}
 
 
 
