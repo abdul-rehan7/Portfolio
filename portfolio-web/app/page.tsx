@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import Loader from "@/components/Loader"
 import Grid from "@/components/Grid"
+import RecentProjects from "@/components/RecentProjects"
 
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
         <FloatingNav navItems={[{name: "Home", link: ""},{name: "Projects", link: ""},{name: "About", link: ""},{name: "Contact", link: ""}]}/>
         <Hero />
         <Grid/>
+        <RecentProjects/>
 
         
       </div>
