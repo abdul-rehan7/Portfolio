@@ -40,16 +40,20 @@ const Loader = () => {
   }, []);
 
   return (
-        <div>
-          <div
-            id="loader"
-            className="flex justify-center items-center  h-[100vh] w-[100vw] bg-black fixed z-[2000]"
-          >
-            <div className="lds-dual-ring"></div>
-          </div>
+    <div>
+      <div
+        id="loader"
+        className="flex justify-center items-center  h-[100vh] w-[100vw] bg-black fixed z-[2000]"
+      >
+        <div className="lds-ellipsis">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
-      );
+      </div>
+    </div>
+  );
 };
 
 export default Loader;
-
