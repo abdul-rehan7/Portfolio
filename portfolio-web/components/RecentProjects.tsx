@@ -1,6 +1,7 @@
 import React from "react";
 import { projects } from "@/Data";
 import { PinContainer } from "@/components/ui/3d-pin";
+import {FaLocationArrow }from "react-icons/fa"
 
 const RecentProjects = () => {
   return (
@@ -40,6 +41,10 @@ const RecentProjects = () => {
                     </div>
                   ))}
                 </div>
+                <div className="flex justify-normal items-center text-purple text-sm lg:text-xl">
+                <p>Check Live Site </p>
+                <FaLocationArrow className="ms-3 " color="#CBACF9" />
+              </div>
               </div>
             </PinContainer>
           </div>
