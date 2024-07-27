@@ -31,8 +31,6 @@ export default function RootLayout({
         >
           {children}
         </ThemeProvider>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>AOS.init();</script>
       </body>
     </html>
   );
