@@ -19,7 +19,6 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta property="og:image" content="/logo.png" />
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="shortcut icon" href="/logo.png" type="image/x-icon" />
       </head>
       <body className={inter.className}>
