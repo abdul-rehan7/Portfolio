@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const RecentProjects = () => {
   return (
-    <div className="py-10 bg-black-100 z-40 ">
+    <div id="projects" className="py-10 bg-black-100 z-40 ">
       <h1 className="heading">
         Small selection of {""}
         <span className="text-purple">Recent Projects</span>
