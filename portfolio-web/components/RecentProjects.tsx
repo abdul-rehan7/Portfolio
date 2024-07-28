@@ -9,7 +9,7 @@ const RecentProjects = () => {
     <div id="projects" className="py-10 bg-black-100 z-40 ">
       <h1 className="heading">
         Small selection of {""}
-        <span className="text-purple">Recent Projects</span>
+        <span className="text-black-300">Recent Projects</span>
       </h1>
       <div className="flex  flex-wrap items-center justify-center  lg:gap-[15%] gap-16 lg:gap-y-16 mt-4">
         {projects.map(({ id, title, des, img, link, iconLists }) => (
@@ -53,7 +53,7 @@ const RecentProjects = () => {
                     </div>
                   ))}
                 </div>
-                <div className="flex justify-normal items-center text-purple text-sm lg:text-xl">
+                <div className="flex justify-normal items-center text-black-300 text-sm lg:text-xl">
                   <p>Check Live Site </p>
                   <FaLocationArrow className="ms-3 " color="#CBACF9" />
                 </div>

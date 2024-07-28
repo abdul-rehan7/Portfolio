@@ -5,15 +5,15 @@ import Bar from "@/components/Bar"
 const Footer = () => {
   return (
     <footer className="w-full" id="contact">
-      <div className="w-full absolute left-0 flex -mt-32  justify-center  min-h-96 bg-black-100 ">
+      <div className="w-full absolute left-0 flex -mt-20  justify-center  min-h-96 bg-black-100 ">
         <img
           src="/footer-grid.svg"
           alt="grid"
-          className="w-full h-full opacity-70"
+          className="w-full h-full opacity-100"
         />
-        <div className="flex space-y-7 absolute lg:top-[50%] top-[25%] p-7 text-center flex-col items-center">
+        <div className="flex space-y-7 absolute lg:top-[47%] top-[25%] p-7 text-center flex-col items-center">
           <h1 className="heading lg:max-w-[55vw]  max-w-[90vw] ">
-            Ready to take <span className="text-purple">Your</span> Digital
+            Ready to take <span className="text-black-300">Your</span> Digital
             Presence to the next Level?
           </h1>
           <p className="lg:max-w-[55vw]  max-w-[90vw] ">

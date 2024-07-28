@@ -79,7 +79,7 @@ html, body {
     @apply border-border  ;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-black;
   }
   button {
     @apply active:outline-none;
@@ -88,7 +88,7 @@ html, body {
 
 @layer utilities {
   .heading {
-    @apply font-bold text-4xl md:text-5xl text-center;
+    @apply font-bold text-black text-4xl md:text-5xl text-center;
   }
 
   .black-gradient {

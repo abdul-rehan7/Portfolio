@@ -7,7 +7,7 @@ const Experience = () => {
     <div id="experience" className="pt-10 bg-black-100 z-40 ">
       <h1 className="heading px-3">
         My
-        <span className="text-purple"> Work Experience</span>
+        <span className="text-black-300"> Work Experience</span>
       </h1>
       <div className="w-full mt-7 grid lg:grid-cols-4 grid-cols-1 gap-10">
         {workExperience.map((card) => (
@@ -30,7 +30,7 @@ const Experience = () => {
                 </h1>
               </div>
               <div className="">
-                <p className="text-start text-white mt-3 font-semibold">
+                <p className="text-start text-black mt-3 font-semibold">
                   {" "}
                   {card.desc}
                 </p>
