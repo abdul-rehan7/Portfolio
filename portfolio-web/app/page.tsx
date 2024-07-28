@@ -5,11 +5,13 @@ import Grid from "@/components/Grid";
 import RecentProjects from "@/components/RecentProjects";
 import Clients from "@/components/Clients";
 import { navItems } from "@/Data";
+import Experience from "@/components/Experience";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
     <main>
-      <div className="flex flex-col justify-center max-w-[100vw] ">
+      <div className="flex flex-col justify-center max-w-[100vw]">
         <FloatingNav
           navItems={navItems}
         />
@@ -17,6 +19,8 @@ export default function Home() {
         <Grid />
         <RecentProjects />
         <Clients/>
+        <Experience/>
+        <Footer/>
       </div>
     </main>
   );
