@@ -11,11 +11,11 @@ const Hero = () => {
         <div className="pb-20  w-[100%] flex  items-center">
           <Spotlight
             className="-top-10 z-50 w-[100%] left-4 md:-left-22 md:-top-20 h-full"
-            fill="white"
+            fill="purple"
           />
           <Spotlight
-            className="-top-2 z-50 left-[12rem] md:left-[55vw] md:-top-12 md:h-[60vh]  h-[30vh] w-[50%]"
-            fill="white"
+            className="-top-2 z-50 left-[18rem] md:left-[55vw] md:-top-12 md:h-[60vh]  h-[30vh] w-[50%]"
+            fill="purple"
           />
         </div>
         <GridBackgroundDemo />

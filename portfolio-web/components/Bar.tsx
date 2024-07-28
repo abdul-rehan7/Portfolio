@@ -1,10 +1,10 @@
 import { socialMedia } from "@/Data";
 import React from "react";
-import { div } from "three/examples/jsm/nodes/Nodes.js";
+
 
 const Bar = () => {
   return (
-    <div className="w-[100%] mt-[9%] space-y-3  flex justify-around flex-col lg:flex-row z-50 h-[5rem]">
+    <div className="w-[100%] lg:mt-[9%] mt-0 space-y-3 bg-black-100  flex justify-around flex-col lg:flex-row z-50 h-[10rem]">
       <div className="flex items-center justify-center">
         <p>Copyright &copy; 2024 Abdul Rehan</p>
       </div>
