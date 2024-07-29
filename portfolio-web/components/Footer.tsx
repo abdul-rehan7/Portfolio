@@ -4,8 +4,8 @@ import Bar from "@/components/Bar"
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-black-100" id="contact">
-      <div className="w-full absolute left-0 flex -mt-20  justify-center  min-h-96 bg-black-100 ">
+    <footer className="max-w-[100vw] overflow-x-hidden bg-black-100" id="contact">
+      <div className="w-[100vw] absolute left-0 flex -mt-20  justify-center  min-h-96 bg-black-100 ">
         <img
           src="/footer-grid.svg"
           alt="grid"

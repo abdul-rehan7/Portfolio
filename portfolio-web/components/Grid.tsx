@@ -4,8 +4,8 @@ import { gridItems } from "@/Data";
 
 const Grid = () => {
   return (
-    <section className="flex p-4" id="about">
-      <BentoGrid className="max-w-6xl h-full   mx-auto">
+    <section className="flex justify-center" id="about">
+      <BentoGrid className="max-w-[100vw] h-full ">
         {gridItems.map((item, i) => (
           <BentoGridItem
             id={item.id}

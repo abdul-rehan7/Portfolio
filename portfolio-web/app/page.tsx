@@ -10,8 +10,8 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main>
-      <div className="flex flex-col justify-center max-w-[100vw]">
+    <main className=" flex justify-center">
+      <div className="flex flex-col justify-center max-w-full">
         <FloatingNav
           navItems={navItems}
         />
