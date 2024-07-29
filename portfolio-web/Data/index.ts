@@ -113,33 +113,27 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Working with Rehan was a fantastic experience from start to finish. He took the time to understand our needs and goals, ensuring every detail was addressed. The website he delivered not only met but exceeded our expectations. It was evident that he put a lot of thought and effort into the design and functionality. Our team has received numerous compliments on the new site, and we've noticed a significant increase in user engagement.",
+    name: "John D.",
+    title: "Marketing Manager",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Rehan transformed our outdated website into a modern, user-friendly platform that truly represents our brand. His attention to detail and dedication were evident throughout the project. He was always available to answer our questions and provide valuable insights. The final product was beyond what we had envisioned, making it easier for our customers to navigate and interact with our services. ",
+    name: "Sarah P.",
+    title: "Small Business Owner",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Rehan's expertise in web development is impressive. He was able to integrate complex functionalities seamlessly, making our site both attractive and highly functional. Throughout the project, he demonstrated a deep understanding of our requirements and provided innovative solutions to challenges we faced. His ability to blend creativity with technical skills resulted in a website that stands out in our industry.",
     name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    title: "Tech Startup Founder",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Rehan's work on our website has significantly improved our online presence and helped us reach a broader audience. He was professional, responsive, and a pleasure to work with. Rehan took the time to understand our mission and goals, ensuring the website effectively communicated our message. Since the launch, we've seen an increase in donations and volunteer sign-ups, which speaks to the quality of his work. ",
+    name: "Emily R.",
+    title: "Nonprofit Director",
   },
 ];
 
@@ -179,22 +173,22 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Website Development Senior",
+    desc: "Provideding support by solving student queries related to TypeScript, React.js, HTML, CSS, and JavaScript",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: "HTML/CSS/JS Instructor",
+    desc: "Teaching HTML, CSS, JavaScript and Assessing student progress and provided constructive feedback",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    title: "Customer Support Representative",
+    desc: "Maintaining high customer satisfaction through effective communication and problem-solving",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
   },
@@ -211,16 +205,16 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
-    link:"https://github.com/abdul-rehan7"
+    link: "https://github.com/abdul-rehan7",
   },
   {
     id: 2,
     img: "/twit.svg",
-    link:"https://twitter.com/abdul_rehan76"
+    link: "https://twitter.com/abdul_rehan76",
   },
   {
     id: 3,
     img: "/link.svg",
-    link:"https://www.linkedin.com/in/abdul-rehan/"
+    link: "https://www.linkedin.com/in/abdul-rehan/",
   },
 ];
